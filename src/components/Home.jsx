@@ -23,10 +23,10 @@ function Home({logout}) {
 
   return (
 
-    
-      
-    <div className='d-flex flex-column col-12 main '>
+    <>
        <LoginSuccessful />
+    <div className='d-flex flex-column col-12 main '>
+      
         <Header logout={logout} />
 
         <div className='d-flex col-12 justify-content-between'>
@@ -46,6 +46,7 @@ function Home({logout}) {
         
         
       </div>
+      </>
      
    
   );

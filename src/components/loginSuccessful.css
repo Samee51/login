@@ -1,6 +1,7 @@
 .loginSuccessful{
 
-    height: 100vh !important;
+   
+    height: 100vh;
     padding: 0px !important;
     z-index: 4;
 }
