@@ -1,0 +1,83 @@
+.login {
+
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(158deg, rgba(255, 255, 255, 1) 30%, rgba(255, 242, 242, 1) 60%, rgba(255, 233, 233, 1) 90%);
+}
+
+.login form,
+.login input {
+
+    background-color: #7886C7 !important;
+
+}
+
+
+.passwordSpan,
+.emailSpan {
+
+    font-size: smaller !important;
+}
+
+.formBtn span,
+.formBtn span a {
+
+    font-size: 15px !important;
+}
+
+.login input::placeholder {
+
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: lighter;
+}
+
+.hoverZoom {
+
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.hoverZoom:hover {
+
+    transform: scale(1.05);
+
+}
+
+.login a {
+
+    transform: translateY(-2px);
+}
+.toggle{
+
+    transition: transform 0.3s ease-in-out;
+}
+.toggleDown{
+
+    transform: translateY(0px) !important;
+    
+}
+.toggleUp{
+
+    transform: translateY(-200px) !important;
+}
+
+.login input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+/* animations  */

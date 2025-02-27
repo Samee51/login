@@ -1,0 +1,142 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(158deg, rgba(255, 255, 255, 1) 30%, rgba(255, 242, 242, 1) 60%, rgba(255, 233, 233, 1) 90%);
+}
+
+.feature {
+
+  height: 93vh;
+}
+
+
+
+.dBoard {
+  visibility: visible;
+  overflow-x: auto;
+  height: 100vh;
+  background-color:
+    #7886C7;
+ 
+
+}
+
+.dBoardTransition {
+
+  transform: translateX(0px) !important;
+
+  
+}
+
+.mBoard {
+  height: 100vh;
+  overflow-x: auto;
+  background: #FFF2F2;
+
+}
+
+.maindBoard {
+
+  visibility: visible;
+  background-color:
+    #7886C7;
+}
+
+.burgerMenuLogo {
+
+  display: none !important;
+}
+
+.burgerMenu {
+
+  display: none !important;
+}
+
+
+
+.navBox {
+  background-color: #7886C7;
+}
+.navBar{
+
+  overflow: hidden;
+  height: auto;
+}
+
+
+
+
+@media (max-width:900px) {
+
+  .navBox {
+
+    width: 90vw;
+    top: 15px;
+    border-radius: 20px;
+    padding: 0px 20px;
+  }
+
+  .burgerMenu {
+
+    display: block !important;
+  }
+
+  .logoutBtn {
+
+    display: none !important;
+  }
+
+
+  .main {
+
+    align-items: center;
+   
+    
+  }
+
+  .dBoard {
+
+    transform: translateX(-600px);
+    width: 60vw;
+    transition: transform 0.5s ease-in-out !important;
+    z-index: 3 !important;
+
+  }
+
+  .content {
+
+    width: 100vw !important;
+    padding: 20px 0px;
+    align-items: center !important;
+  }
+
+  .content div {
+
+    width: 85vw;
+  }
+
+  .container {
+
+    margin: 0px !important;
+  }
+
+  .box {
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0px !important;
+    margin: 0px !important;
+    
+  }
+
+  .box>div {
+
+    width: 70vw;
+  }
+
+
+
+
+}
