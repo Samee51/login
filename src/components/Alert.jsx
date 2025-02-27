@@ -1,20 +1,10 @@
-import React from 'react';
+import React  from 'react';
 
-const Alert = ({ message , toggle }) => {
-
-
-    const handleToggle = (e) => {
-
-        e.preventDefault();
-        toggle();
-        
-    }
-
+const Alert = ({ message , ref}) => {
 
     return (
-        <div className="alert alert-warning alert-dismissible fade show" role="alert">
+        <div ref={ref} className="toggle toggleUp alert alert-warning alert-dismissible mb-2 fade show text-center rounded-top-0" role="alert">
             <strong>{message}</strong>
-            <button type="button" className="btn-close shadow-none" onClick={handleToggle} aria-label="Close"></button>
         </div>
     );
 }

@@ -10,6 +10,7 @@ import Services from './homeComponents/Services';
 import Feature1 from './homeComponents/featureComp/feature1';
 import Feature2 from './homeComponents/featureComp/feature2';
 import Feature3 from './homeComponents/featureComp/feature3';
+import LoginSuccessful from './LoginSuccessful'
 
 
 
@@ -23,13 +24,13 @@ function Home({logout}) {
   return (
 
     
-   
+      
     <div className='d-flex flex-column col-12 main '>
+       <LoginSuccessful />
         <Header logout={logout} />
 
         <div className='d-flex col-12 justify-content-between'>
           <Dashboard />
-          
           <Routes>
             <Route path="/" element = {<Homee />} />
             <Route path="/pricing" element = {<Pricing />} />

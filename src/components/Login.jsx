@@ -5,7 +5,6 @@ import './Login.css'
 const Login = ({ login }) => {
 
     const [formData, setFormData] = useState({ phone: "", password: "" });
-    const [alertToggle, setAlertToggle] = useState(false);
     const [alert, setAlert] = useState("true")
 
     const elementPhone = useRef(0);
@@ -45,8 +44,8 @@ const Login = ({ login }) => {
 
 
 
-        formData.phone === "" && elementPhone.current.classList.add("border-danger", "border-2");
-        formData.password == "" && elementPassword.current.classList.add("border-danger", "border-2");
+        formData.phone === "" && elementPhone.current.classList.add("border-danger-subtle");
+        formData.password == "" && elementPassword.current.classList.add("border-danger-subtle");
 
         if (formData.phone !== "" && formData.password !== "") {
 
@@ -61,7 +60,7 @@ const Login = ({ login }) => {
 
                 } else {
 
-                    setAlertToggle(true);
+                 
                     if (elementToggle.current) elementToggle.current.classList.remove("toggleUp") && elementToggle.current.classList.add("toggleDown");
                     console.log(elementToggle);
 
@@ -72,7 +71,7 @@ const Login = ({ login }) => {
 
             } else {
 
-                setAlertToggle(true);
+              
                 if (elementToggle.current) elementToggle.current.classList.remove("toggleUp") && elementToggle.current.classList.add("toggleDown");
 
                 console.log(elementToggle.current)
@@ -86,19 +85,13 @@ const Login = ({ login }) => {
 
 
     return (
-        <div className="login container-fluid row  ">
+        <div className="login container-fluid ">
             <div className="row  justify-content-center">
-                <div className='col-lg-3 col-md-6 col-9 loginForm   '>
+                <div className='col-lg-4 col-md-6 col-sm-8 col-10 loginForm   '>
                     <div className='row'>
-                        {alertToggle
-                            ?
-                            <div ref={elementToggle} className="alert toggle toggleUp text-center alert-danger alert-dismissible border-top-0 fade show" role="alert" >
+                            <div ref={elementToggle} className="alert toggle toggleUp text-center alert-danger alert-dismissible border-top-0 rounded-top-0 fade show" role="alert" >
                                 <strong >Wrong Credentials</strong>
                             </div>
-                            :
-                            <div className="alert alert-danger alert-dismissible fade hide" role="alert">
-                                <strong>Wrong Credentials</strong>
-                            </div>}
 
                     </div>
 
@@ -113,12 +106,12 @@ const Login = ({ login }) => {
 
                             <div>
                                 <div className="mt-5">
-                                    <input ref={elementPhone} onChange={handleChange} value={formData.phone} type="number" className="form-control border-0 border-bottom rounded-0 border-1  shadow-none  text-light fw-bold font-monospace ps-3 py-1 mb-3 mt-4" placeholder="Phone" name='phone' />
+                                    <input ref={elementPhone} onChange={handleChange} value={formData.phone} type="number" className="form-control border-0 border-bottom rounded-0 border-2  shadow-none  text-light fw-bold font-monospace ps-3 py-2 mb-3 mt-4" placeholder="Phone" name='phone' />
 
                                 </div>
 
                                 <div className=" my-5">
-                                    <input ref={elementPassword} type="password" onChange={handleChange} value={formData.password} className="form-control border-0 border-bottom rounded-0  border-1 shadow-none text-light fw-bold ps-3 py-1 mb-4" placeholder="Password" name='password' />
+                                    <input ref={elementPassword} type="password" onChange={handleChange} value={formData.password} className="form-control border-0 border-bottom rounded-0  border-2 shadow-none text-light fw-bold ps-3 py-2 mb-4" placeholder="Password" name='password' />
 
                                 </div>
                             </div>

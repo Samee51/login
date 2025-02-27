@@ -1,8 +1,8 @@
 .login {
 
     min-height: 100vh;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(158deg, rgba(255, 255, 255, 1) 30%, rgba(255, 242, 242, 1) 60%, rgba(255, 233, 233, 1) 90%);
+    min-width: 100vw;
+    background: linear-gradient(245deg, rgba(0,0,0,0.4962359943977591) 0%, rgba(0,0,0,0.5158438375350141) 30%),url("../assets/login/pexels-dreamypixel-552789.jpg") center/cover no-repeat  !important;
 }
 
 .login form,
